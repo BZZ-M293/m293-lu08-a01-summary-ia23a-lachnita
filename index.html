@@ -3,19 +3,426 @@
 <head>
   <meta charset="UTF-8">
   <title>Zusammenfassung Modul 293</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
 
+    header, nav, footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    pre {
+      background: #f4f4f4;
+      padding: 20px;
+      border: 1px solid #ddd;
+      overflow: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+  </style>
 </head>
 <body>
-  <header>
-    
-  </header>
-  <nav>
-    
-  </nav>
+<header>
   <h1>Zusammenfassung Modul 293</h1>
+</header>
+<nav>
+  <a href="#lu1">Learning Unit 1</a>
+  <a href="#lu2">Learning Unit 2</a>
+  <a href="#lu3">Learning Unit 3</a>
+  <a href="#lu4">Learning Unit 4</a>
+  <a href="#lu5">Learning Unit 5</a>
+  <a href="#lu6">Learning Unit 6</a>
+  <a href="#lu7">Learning Unit 7</a>
+  <a href="#lu8">Learning Unit 8</a>
+</nav>
+<main>
+  <section id="lu1">
+    <h2>Learning Unit 1: HTML und Werkzeuge</h2>
+    <p><strong>Auszeichnungssprachen:</strong><br>
+      Maschinenlesbare Sprache, Gliederung und Formatierung, keine Programmiersprache.</p>
 
-  <footer>
-    
-  </footer>
+    <p><strong>HTML:</strong><br>
+      HyperText Markup Language, Standard für Webseiten, aktuelle Version: HTML5.</p>
+
+    <p><strong>Element:</strong><br>
+      Bausteine von HTML, markiert durch Tags, können verschachtelt sein.</p>
+
+    <p><strong>Tag:</strong><br>
+      Schlüsselwort, markiert Elemente, geschrieben in spitzen Klammern, z.B. <code>&lt;body&gt;</code>.</p>
+
+    <p><strong>Attribute:</strong><br>
+      Zusätzliche Angaben im Tag, z.B. <code>lang="de"</code>, bestehen aus Schlüsselwort und Wert.</p>
+
+    <p><strong>CSS:</strong><br>
+      Cascading Style Sheets, verantwortlich für Layout und Darstellung.</p>
+
+    <p><strong>HTML Grundgerüst:</strong><br>
+      Vorlage in Webstorm:</p>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+    <p><strong>&lt;!DOCTYPE html&gt;</strong><br>
+      Legt Dokumentenart fest, kein schließendes Tag.</p>
+
+    <p><strong>&lt;html&gt; ... &lt;/html&gt;</strong><br>
+      Ganzes HTML-Dokument muss zwischen diesen Tags stehen, <code>lang=??</code> angeben.</p>
+
+    <p><strong>&lt;head&gt; ... &lt;/head&gt;</strong><br>
+      Informationen über Seiteninhalt, nicht angezeigt im Browser, zwingend: <code>&lt;title&gt;</code> und <code>&lt;meta charset="utf-8"&gt;</code>.</p>
+
+    <p><strong>&lt;body&gt; ... &lt;/body&gt;</strong><br>
+      Inhalt der Webseite, angezeigt im Browser.</p>
+  </section>
+
+
+  <section id="lu2">
+    <h2>Learning Unit 2: Aufbau HTML-Datei</h2>
+    <p><strong>Block- und Inline-Elemente:</strong></p>
+    <p>2 Arten von HTML-Elementen:</p>
+
+    <h3>Block-Elemente</h3>
+    <ul>
+      <li>Absätze: <code>&lt;p&gt;</code></li>
+      <li>Listen: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code></li>
+      <li>Überschriften: <code>&lt;h1&gt;</code> bis <code>&lt;h6&gt;</code></li>
+      <li>Artikel: <code>&lt;article&gt;</code></li>
+      <li>Abschnitte: <code>&lt;section&gt;</code></li>
+    </ul>
+
+    <h3>Inline-Elemente</h3>
+    <ul>
+      <li>Links: <code>&lt;a&gt;</code></li>
+      <li>Hervorgehobene Wörter: <code>&lt;em&gt;</code></li>
+      <li>Wichtige Wörter: <code>&lt;strong&gt;</code></li>
+      <li>Kurze Zitate: <code>&lt;q&gt;</code></li>
+    </ul>
+
+    <h3>Cascading Style Sheets (CSS)</h3>
+    <p><strong>Aufbau eines Selektors in CSS:</strong></p>
+    <pre><code>selector {
+  property: value;
+}</code></pre>
+
+    <p><strong>Deklaration eines Selektors:</strong></p>
+    <pre><code>p {
+  color: red;
+  font-size: 14px;
+}</code></pre>
+
+    <p><strong>Kommentare für CSS-Code verwenden:</strong></p>
+    <pre><code>/* Das ist ein Kommentar in CSS */
+p {
+  color: blue; /* Dieser Kommentar ist inline */
+}</code></pre>
+
+    <p><strong>Formatierung des Quellcodes:</strong></p>
+    <pre><code>body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}</code></pre>
+  </section>
+
+  <section id="lu3">
+    <h2>Learning Unit 3: Blöcke und Inhalte</h2>
+
+    <h3>Anwendung von Block-Elementen</h3>
+    <ul>
+      <li>div-Element: <code>&lt;div&gt;</code></li>
+      <li>p-Element: <code>&lt;p&gt;</code></li>
+      <li>table-Element: <code>&lt;table&gt;</code></li>
+    </ul>
+
+    <h3>Beispiele für Block-Elemente</h3>
+    <pre><code>&lt;div&gt;
+  &lt;p&gt;Das ist ein Absatz in einem div-Element.&lt;/p&gt;
+  &lt;table&gt;
+    &lt;tr&gt;&lt;td&gt;Zelle 1&lt;/td&gt;&lt;td&gt;Zelle 2&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Zelle 3&lt;/td&gt;&lt;td&gt;Zelle 4&lt;/td&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+
+    <h3>Anwendung von Inline-Elementen</h3>
+    <ul>
+      <li>span-Element: <code>&lt;span&gt;</code></li>
+      <li>a-Element: <code>&lt;a&gt;</code></li>
+      <li>img-Element: <code>&lt;img&gt;</code></li>
+    </ul>
+
+    <h3>Beispiele für Inline-Elemente</h3>
+    <pre><code>&lt;p&gt;Dies ist ein &lt;span&gt;hervorgehobener Text&lt;/span&gt; innerhalb eines Absatzes.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;Das ist ein Link&lt;/a&gt;
+&lt;img src="bild.jpg" alt="Beispielbild"&gt;</code></pre>
+
+    <h3>Selektoren für Elemente</h3>
+    <p><strong>id:</strong></p>
+    <pre><code>#example-id {
+  color: green;
+}</code></pre>
+
+    <p><strong>class:</strong></p>
+    <pre><code>.example-class {
+  color: blue;
+}</code></pre>
+  </section>
+
+  <section id="lu4">
+    <h2>Learning Unit 4: Codestyle und Statische Code Analyse</h2>
+
+    <h3>4a. Codestyle</h3>
+    <ul>
+      <li>Dateinamen in Kleinbuchstaben schreiben</li>
+      <li>Elementnamen in Kleinbuchstaben schreiben</li>
+      <li>Kleinbuchstaben für Attributnamen verwenden</li>
+      <li>Attributwerte immer in Hochkomma setzen</li>
+      <li>Alle HTML-Elemente schließen</li>
+      <li><code>alt</code>, <code>width</code> und <code>height</code> für Bilder angeben</li>
+      <li>Leerzeichen und Gleichheitszeichen korrekt verwenden</li>
+    </ul>
+
+    <p><strong>Good:</strong></p>
+    <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+
+    <p><strong>Bad:</strong></p>
+    <pre><code>&lt;link rel = "stylesheet" href = "styles.css"&gt;</code></pre>
+
+    <ul>
+      <li>Vermeiden Sie lange Codezeilen</li>
+      <li>Leerzeilen und Einrückungen korrekt verwenden</li>
+      <li><code>&lt;title&gt;</code>-Element immer angeben</li>
+      <li>HTML-Kommentare verwenden</li>
+    </ul>
+
+    <h3>Beispiel für HTML-Kommentare</h3>
+    <pre><code>&lt;!-- Das ist ein HTML-Kommentar --&gt;</code></pre>
+
+    <h3>4b. Statische Code Analyse</h3>
+    <ul>
+      <li>Automatische Formatierung</li>
+      <li>Code-Style-Konfiguration</li>
+      <li>Linters und Code-Analyse-Tools</li>
+      <li>Live-Vorlagen und Code-Snippets</li>
+      <li>Code-Inspektionen</li>
+      <li>Linter für HTML installieren</li>
+    </ul>
+
+    <p>Linter: Programm zur Quellcode-Analyse, identifiziert Probleme, Stilprobleme und Verstöße gegen Best Practices. Unterstützt sauberen und konsistenten Code, verbessert die Codequalität. Beispiel: htmlhint auf Notebook installieren und verwenden.</p>
+
+    <h3>Beispiel für die Verwendung von htmlhint</h3>
+    <pre><code># Installieren Sie htmlhint
+npm install -g htmlhint
+
+# Verwenden Sie htmlhint zur Analyse Ihres HTML-Codes
+htmlhint IhreDatei.html</code></pre>
+  </section>
+
+  <section id="lu5">
+    <h2>Learning Unit 5: HTTP und Adressen</h2>
+
+    <h3>HTTP-Methoden</h3>
+    <ul>
+      <li>GET: Daten abrufen</li>
+      <li>POST: Daten senden</li>
+      <li>PUT: Daten aktualisieren</li>
+      <li>DELETE: Daten löschen</li>
+    </ul>
+
+    <h3>HTTP Statuscodes</h3>
+    <ul>
+      <li>200: OK</li>
+      <li>404: Nicht gefunden</li>
+      <li>500: Serverfehler</li>
+    </ul>
+
+    <h3>Domain Name System (DNS)</h3>
+    <p>Namensauflösung: Konvertiert Domainnamen in IP-Adressen</p>
+
+    <h3>Adressen im Web</h3>
+    <h4>Absolute Adressen</h4>
+    <p>Vollständige URL, z.B. <code>https://example.com/path</code></p>
+
+    <h4>Relative Adressen</h4>
+    <ul>
+      <li>Nur Dateiname: <code>props01.png</code> (gleicher Ordner)</li>
+      <li>Mit Punkt: <code>./img/props01.png</code> (aktuelles Verzeichnis)</li>
+      <li>Mit Schrägstrich: <code>/img/props01.png</code> (Wurzelverzeichnis)</li>
+    </ul>
+  </section>
+
+  <section id="lu6">
+    <h2>Learning Unit 6: Formularelemente</h2>
+
+    <h3>Formular-Elemente</h3>
+    <ul>
+      <li><code>&lt;form&gt;</code>: Formularcontainer</li>
+      <li><code>action</code>: Ziel-URL</li>
+      <li><code>method</code>: Übertragungsmethode (GET, POST)</li>
+    </ul>
+
+    <h3>Input-Elemente</h3>
+    <ul>
+      <li><code>&lt;input&gt;</code>: Eingabefeld</li>
+      <li><code>name</code>: Name des Eingabefelds</li>
+      <li><code>type</code>: Typ des Eingabefelds (text, password, email, etc.)</li>
+      <li>Sonstige Attribute:
+        <ul>
+          <li><code>minlength</code>: Minimale Zeichenanzahl</li>
+          <li><code>required</code>: Pflichtfeld</li>
+          <li><code>max</code>: Maximaler Wert</li>
+        </ul>
+      </li>
+      <li><code>&lt;textarea&gt;</code>: Mehrzeiliges Eingabefeld</li>
+      <li><code>&lt;label&gt;</code>: Beschriftung für Eingabefelder</li>
+      <li>Button-Typen:
+        <ul>
+          <li><code>type="submit"</code>: Senden</li>
+          <li><code>type="reset"</code>: Zurücksetzen</li>
+          <li><code>type="button"</code>: Standard-Button</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Validierung</h3>
+    <table>
+      <tr>
+        <th>Attribut</th>
+        <th>Beschreibung</th>
+        <th>types</th>
+      </tr>
+      <tr>
+        <td>required</td>
+        <td>Pflichtfeld</td>
+        <td>alle außer image, button</td>
+      </tr>
+      <tr>
+        <td>minlength / maxlength</td>
+        <td>Minimale und maximale Zeichenanzahl</td>
+        <td>text, email, search, password, tel, url</td>
+      </tr>
+      <tr>
+        <td>min / max</td>
+        <td>Minimaler und maximaler Wert</td>
+        <td>number, date, time</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="lu7">
+    <h2>Learning Unit 7: Erweiterte Formularelemente</h2>
+
+    <h3>Auswahllisten</h3>
+    <ul>
+      <li>Aufbau einer Auswahlliste mit <code>&lt;select&gt;</code></li>
+      <li>Einträge innerhalb von <code>&lt;option&gt;</code></li>
+      <li>Auswahllisten mit Mehrfachauswahl</li>
+    </ul>
+
+    <h3>Checkbox und Radiobutton</h3>
+    <ul>
+      <li>Radiobutton: <code>&lt;input type="radio"&gt;</code></li>
+      <li>Checkbox: <code>&lt;input type="checkbox"&gt;</code></li>
+    </ul>
+
+    <h3>Datalist</h3>
+    <ul>
+      <li>Ermöglicht eine Liste vorgegebener Optionen mit <code>&lt;datalist&gt;</code> und <code>&lt;option&gt;</code></li>
+    </ul>
+
+    <h3>Fieldset und Legend</h3>
+    <ul>
+      <li><code>&lt;fieldset&gt;</code> zur Gruppierung von Elementen</li>
+      <li><code>&lt;legend&gt;</code> zur Beschriftung der Gruppen</li>
+    </ul>
+  </section>
+
+  <section id="lu8">
+    <h2>Learning Unit 8: Seitennavigation</h2>
+
+    <h3>Wichtige Attribute des <code>&lt;a&gt;</code>-Tags</h3>
+    <ul>
+      <li>href: Ziel-URL</li>
+      <li>target: Öffnen des Links in einem neuen Fenster oder Tab</li>
+      <li>title: Tooltip-Text für den Link</li>
+    </ul>
+
+    <h3>Grundstruktur des <code>&lt;nav&gt;</code>-Elements</h3>
+    <p>Das <code>&lt;nav&gt;</code>-Element dient der strukturellen Auszeichnung von Navigationsbereichen.</p>
+
+    <h3>Anwendung des <code>&lt;nav&gt;</code>-Elements</h3>
+    <p>Um die Navigation eines Dokuments zu gruppieren und zu kennzeichnen.</p>
+
+    <h3>Navigation</h3>
+    <ul>
+      <li>Navigation über mehrere Seiten mit dem <code>&lt;a&gt;</code>-Tag</li>
+      <li>Navigation auf einer Seite mit Sprungmarken</li>
+    </ul>
+
+    <h3>Grundlagen der Sprungmarken</h3>
+    <p>Mit Sprungmarken können Benutzer direkt zu einem bestimmten Abschnitt innerhalb einer Seite springen.</p>
+  </section>
+
+</main>
+<footer>
+  <p>&copy; 2024 Zusammenfassung Modul 293</p>
+</footer>
 </body>
 </html>
